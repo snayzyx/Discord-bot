@@ -12,28 +12,8 @@ Welcome to the **Discord Bot Project**! 🚀 This project consists of giving you
 - **Documentation**: Documentation will be available once V1 of the project is completed.
 
 ---
-## 📷 Screenshots
+## </> languages
 
-### Python Integration:
-```python
-from my_awesome_project import feature_x
+[![Python Screenshot](https://dummyimage.com/600x400/3572A5/FFFFFF&text=Python+Code+Example)
+](https://skillicons.dev/icons?i=discord,py,js,&perline=8)
 
-# Use Feature X in Python
-result = feature_x(data="Hello, World!")
-print(result)
-```
-
-![Python Screenshot](https://dummyimage.com/600x400/3572A5/FFFFFF&text=Python+Code+Example)
-
-### JavaScript Usage:
-```javascript
-import { featureY } from 'my-awesome-project';
-
-// Use Feature Y in JavaScript
-const result = featureY('Hello, World!');
-console.log(result);
-```
-
-![JavaScript Screenshot](https://dummyimage.com/600x400/F7DF1E/000000&text=JavaScript+Code+Example)
-
----
