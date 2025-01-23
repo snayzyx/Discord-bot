@@ -14,6 +14,5 @@ Welcome to the **Discord Bot Project**! 🚀 This project consists of giving you
 ---
 ## </> languages
 
-[![Python Screenshot](https://dummyimage.com/600x400/3572A5/FFFFFF&text=Python+Code+Example)
-](https://skillicons.dev/icons?i=discord,py,js,&perline=8)
+[![Python Screenshot](https://skillicons.dev/icons?i=discord,py,js,&perline=8)
 
