@@ -16,3 +16,15 @@ Welcome to the **Discord Bot Project**! 🚀 This project consists of giving you
 
 ![languages icons](https://skillicons.dev/icons?i=discord,py,js,&perline=8)
 
+---
+
+## 📚 Examples
+
+Here are some examples to help you get started:
+
+### Bot Example:
+- **Commands**: /ping,/profile
+- **Event**: Member join message
+
+
+
