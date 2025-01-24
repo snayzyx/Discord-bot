@@ -13,15 +13,27 @@
                 <img src="static/imgs/discord.png" alt="Discord Logo">
             </a>
             <ul class="nav-links">
-                <li><a href="#">python</a></li>
-                <li><a href="#">javascript</a></li>
-                <li><a href="#">discord</a></li>
+                <li><a href="python.html">Python</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="discord.html">Discord</a></li>
             </ul>
         </div>
     </nav>
     <main>
-        <h1>Bienvenue sur ma page</h1>
-        <p>Ceci est un exemple de page HTML avec une navbar stylée en CSS.</p>
+        <h1>Welcome to Discord-Bot Documentation</h1>
+        <section class="main-contents">
+            <!-- Exemple de carré avec bouton copier -->
+            <div class="code-box">
+                <pre><code>console.log("Hello, world!");</code></pre>
+                <button class="copy-btn" data-content="console.log('Hello, world!');">Copier</button>
+            </div>
+
+            <div class="code-box">
+                <pre><code>print("Hello, Python!")</code></pre>
+                <button class="copy-btn" data-content="print('Hello, Python!')">Copier</button>
+            </div>
+        </section>
     </main>
+    <script src="static/script.js"></script>
 </body>
 </html>

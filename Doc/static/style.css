@@ -2,16 +2,22 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .navbar {
-    background: linear-gradient(135deg, #4c5cff, #1e1e2f); /* Dégradé de couleurs */
-    color: white;
-    padding: 0.5rem 0; 
-    border-radius: 15px; 
-    margin: 10px auto; 
-    width: fit-content; 
-    box-shadow: 0 4px 6px rgba(21, 21, 21, 0.1); 
+    background: linear-gradient(135deg, #4c5cff, #000051);
+    color: #fff;
+    padding: 0.5rem 0;
+    border-radius: 15px;
+    margin: 10px auto;
+    width: fit-content;
+    box-shadow: 0 4px 6px #000051;
 }
 
 .navbar .container {
@@ -25,12 +31,12 @@ body {
 
 .navbar .logo {
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar .logo img {
-    height: 40px; 
+    height: 40px;
     margin-right: 10px;
 }
 
@@ -48,23 +54,218 @@ body {
 
 .navbar .nav-links a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s ease;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 .navbar .nav-links a:hover {
-    background-color: #555;
+    background-color: #8b85e0;
 }
 
 main {
     text-align: center;
-    padding: 2rem;
+    padding: 0 20px;
+    margin-left: 220px;
 }
 
-main h1 {
+.main-content.sidebar-open {
+    margin-left: 250px;
+}
+
+main .intro {
     margin-bottom: 1rem;
     font-size: 2.5rem;
+
+}
+main .main-contents {
+    margin-bottom: 1rem;
+    font-size: 30px;
+    
 }
 
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+    z-index: 100;
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 1rem 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #4c5cff;
+    border-radius: 5px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.open-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 110;
+}
+
+main .installation h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: 15px;
+    background: #4c5cff;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: calc(100% - 220px);
+}
+
+#installation-section {
+    padding: 2rem;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.code-box {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    position: relative;
+    max-width: 600px;
+    text-align: left;
+}
+
+.code-box pre {
+    margin: 0;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+#installation-section .installation-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        left: -100%;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .open-btn {
+        position: relative;
+        z-index: 110;
+    }
+
+    #main-content {
+        margin-left: 0;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .navbar .logo img {
+        height: 30px;
+    }
+
+    .main .intro {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo img {
+        height: 25px;
+    }
+
+    .navbar .nav-links {
+        gap: 0.5rem;
+    }
+
+    .main .intro {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+}
